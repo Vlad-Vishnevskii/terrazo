@@ -240,7 +240,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.01em;
-  color: #1d1d1b;
+  color: rgb(29, 29, 27);
   transition: all 0.3s ease;
   background: none;
   cursor: pointer;
@@ -327,4 +327,118 @@ img {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #646360;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1d1d1b;
+  background-image: url("../img/footer/bg-footer.svg");
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 271px;
+  color: #ffffff;
+  padding: 40px 0;
+}
+.footer_top {
+  display: flex;
+  gap: 85px;
+}
+.footer_socials {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+.footer_socials a:hover, .footer_socials a:focus {
+  opacity: 0.7;
+}
+.footer_email {
+  display: block;
+  margin-top: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer_email:hover, .footer_email:focus {
+  opacity: 0.7;
+}
+.footer_topTitle {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer_linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
+}
+.footer_linkItem {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer_linkItem:hover, .footer_linkItem:focus {
+  opacity: 0.7;
+}
+.footer_bottom {
+  padding-top: 70px;
+  display: flex;
+  gap: 300px;
+}
+.footer_city {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer_adressItem {
+  margin-top: 10px;
+  color: rgb(100, 99, 96);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer_phoneList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer_phoneLink {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer_phoneLink:hover, .footer_phoneLink:focus {
+  opacity: 0.7;
+}
+
+main {
+  min-height: 250px;
 }/*# sourceMappingURL=style.css.map */

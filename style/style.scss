@@ -10,26 +10,26 @@
   }
 }
 
-@mixin vp-1080 {
-  @media (max-width: 1080px) {
+@mixin vp-1023 {
+  @media (max-width: 1023px) {
     @content;
   }
 }
 
-@mixin vp-720 {
-  @media (max-width: 720px) {
+@mixin vp-767 {
+  @media (max-width: 767px) {
     @content;
   }
 }
 
-@mixin vp-500 {
-  @media (max-width: 500px) {
+@mixin vp-450 {
+  @media (max-width: 450px) {
     @content;
   }
 }
 
-@mixin vp-374 {
-  @media (max-width: 374px) {
+@mixin vp-375 {
+  @media (max-width: 375px) {
     @content;
   }
 }
@@ -332,7 +332,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.01em;
-    color: #1d1d1b;
+    color: rgb(29, 29, 27);
     transition: all $trans-default;
     background: none;
     cursor: pointer;
@@ -438,4 +438,140 @@ img {
     text-transform: uppercase;
     color: #646360;
   }
+}
+
+.footer {
+  width: 100%;
+  background-color: #1d1d1b;
+  background-image: url('../img/footer/bg-footer.svg');
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 271px;
+  color: #ffffff;
+  padding: 40px 0;
+
+  &_top {
+    display: flex;
+    gap: 85px;
+  }
+
+  &_socials {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    transition: all $trans-default;
+
+    a {
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &_email {
+    display: block;
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #fff;
+    transition: all $trans-default;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &_topTitle {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &_linksList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
+  }
+
+  &_linkItem {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #fff;
+
+    transition: all $trans-default;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &_bottom {
+    padding-top: 70px;
+    display: flex;
+    gap: 300px;
+  }
+
+  &_city {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &_adressItem {
+    margin-top: 10px;
+    color: rgb(100, 99, 96);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &_phoneList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &_phoneLink {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #fff;
+    transition: all $trans-default;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
+
+main {
+  min-height: 250px;
 }
