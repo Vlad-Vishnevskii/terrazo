@@ -51,51 +51,51 @@ $color-torch-red: #ff1553;
 $color-dodger-blue: #0087ea;
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
 
-  src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
-    url('../fonts/Gilroy-Bold.woff') format('woff');
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
-    url('../fonts/Gilroy-Semibold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-    url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Stem';
-  src: url('../fonts/Stem-Regular.woff2') format('woff2'),
-    url('../fonts/Stem-Regular.woff') format('woff');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham_bold.woff2') format('woff2'),
+    url('../fonts/gotham_bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Stem';
-  src: url('../fonts/Stem-Medium.woff2') format('woff2'),
-    url('../fonts/Stem-Medium.woff') format('woff');
+  font-family: 'Gotham';
+  src: url('../fonts/gotham_medium.woff2') format('woff2'),
+    url('../fonts/gotham_medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Stem';
-  src: url('../fonts/Stem-Bold.woff2') format('woff2'),
-    url('../fonts/Stem-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Gotham';
+  src: url('../fonts/gotham_book.woff2') format('woff2'),
+    url('../fonts/gotham_book.woff2') format('woff');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -109,8 +109,8 @@ $color-dodger-blue: #0087ea;
 }
 
 :root {
-  --font-family: 'Stem', sans-serif;
-  --second-family: 'Gilroy', sans-serif;
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Gotham', sans-serif;
 }
 
 html,
@@ -208,9 +208,14 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1310px;
   margin: 0 auto;
   padding: 0 40px;
+  padding-right: 30px;
+
+  &--header {
+    max-width: 1360px;
+  }
 }
 
 a {
@@ -223,14 +228,14 @@ img {
 }
 
 .header {
-  padding-top: 15px;
+  padding-top: 12px;
 
   &_top {
     display: flex;
     gap: 20px;
     border-bottom: 1px solid #ddd;
     padding: 0 25px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   &_logo {
@@ -248,13 +253,15 @@ img {
     flex-direction: column;
     width: 100%;
     max-width: 474px;
+    margin-right: 13px;
   }
 
   &_city {
     display: flex;
     gap: 8px;
     align-items: center;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   &_cityName {
@@ -267,22 +274,27 @@ img {
 
   &_adressItem {
     margin: 0;
-    color: rgba(0, 0, 0, 0.5);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #646360;
   }
 
   &_phoneList {
     display: flex;
-    gap: 30px;
+    gap: 42px;
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 5px;
   }
 
   &_phoneItem {
     a {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       gap: 5px;
       font-family: var(--font-family);
       font-weight: 400;
@@ -301,13 +313,19 @@ img {
   &_otherContacts {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   &_email {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #1d1d1b;
+    margin-right: 20px;
   }
 
   &_socialsLinks {
@@ -327,11 +345,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     border: 0.5px solid #1d1d1b;
-    padding: 8px 18px;
-    width: 200px;
+    padding: 8px 15px;
+    width: 202px;
     height: 35px;
-    margin-left: 10px;
+    margin-left: 16px;
+    margin-top: -5px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
@@ -356,7 +376,7 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 20px;
 
     a:focus,
     a:hover {
@@ -368,8 +388,9 @@ img {
   &_bottom {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding-top: 20px;
+    padding-left: 25px;
   }
 
   &_productionBtn {
@@ -408,6 +429,7 @@ img {
 
   &_navItem {
     padding: 5px 20px;
+    padding-right: 35px;
     border-left: 1px solid #cea56a;
     margin-top: 15px;
 
@@ -426,7 +448,7 @@ img {
       border: 0;
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1360px) {
       border: 0;
     }
   }
@@ -452,16 +474,21 @@ img {
   background-repeat: repeat;
   min-height: 271px;
   color: #ffffff;
-  padding: 40px 0;
+  padding: 75px 0;
 
   &_top {
     display: flex;
-    gap: 85px;
+    flex-wrap: wrap;
+    padding-left: 17px;
+
+    @media (max-width: 1200px) {
+      gap: 50px;
+    }
   }
 
   &_socials {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
     margin-top: 30px;
     transition: all $trans-default;
@@ -497,16 +524,43 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #fff;
+    margin-top: 5px;
+  }
+
+  &_links {
+    &--first {
+      margin-left: 125px;
+
+      @media (max-width: 1200px) {
+        margin-left: 0;
+      }
+    }
+
+    &--second {
+      margin-left: 10px;
+
+      @media (max-width: 1200px) {
+        margin-left: 0;
+      }
+    }
+
+    &--third {
+      margin-left: 125px;
+
+      @media (max-width: 1200px) {
+        margin-left: 0;
+      }
+    }
   }
 
   &_linksList {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 13px;
+    margin-top: 20px;
   }
 
   &_linkItem {
@@ -525,9 +579,10 @@ img {
   }
 
   &_bottom {
-    padding-top: 70px;
+    padding-top: 80px;
     display: flex;
-    gap: 300px;
+    gap: 345px;
+    padding-left: 20px;
   }
 
   &_city {
@@ -537,17 +592,17 @@ img {
     line-height: 125%;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &_adressItem {
-    margin-top: 10px;
+    margin-top: 11px;
     color: rgb(100, 99, 96);
     font-family: 'Inter';
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: left;
   }
 
@@ -556,6 +611,7 @@ img {
     flex-direction: column;
     gap: 25px;
     margin: 0;
+    margin-top: -30px;
     padding: 0;
     list-style: none;
   }
@@ -576,13 +632,9 @@ img {
   }
 }
 
-main {
-  min-height: 1000px;
-}
-
 .pageInfo {
   position: relative;
-  margin-top: 20px;
+  margin-top: 16px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -602,12 +654,13 @@ main {
   &_textWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     min-height: 400px;
+    padding-left: 20px;
   }
 
   &_title {
+    margin-top: 103px;
     position: relative;
     z-index: 2;
     font-family: var(--second-family);
@@ -663,13 +716,14 @@ main {
 .productTabs {
   margin-top: 60px;
   display: flex;
-  gap: 50px;
-  align-items: flex-end;
+  gap: 65px;
+  align-items: flex-start;
 
   &_count {
     display: flex;
     align-items: baseline;
     gap: 5px;
+    padding-top: 5px;
   }
 
   &_countValue {
@@ -691,7 +745,7 @@ main {
 
   &_list {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
   }
 
@@ -700,7 +754,7 @@ main {
     align-items: center;
     justify-content: center;
     border: 1.5px solid #ddd;
-    padding: 8px 24px;
+    padding: 5px 23px;
     box-shadow: 0 2px 6px 0 rgba(44, 41, 33, 0.1);
     font-family: var(--second-family);
     font-weight: 500;
@@ -729,9 +783,9 @@ main {
 .catalog {
   display: grid;
   grid-template-columns: 185px 1fr;
-  column-gap: 15px;
-  margin-top: 50px;
-  padding-bottom: 150px;
+  column-gap: 46px;
+  margin-top: 33px;
+  padding-bottom: 200px;
 
   &_sidebar {
     display: flex;
@@ -802,10 +856,10 @@ main {
   &_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 22px;
     list-style: none;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 0;
   }
 
@@ -977,10 +1031,10 @@ main {
 
   &_pagination {
     display: flex;
-    gap: 10px;
+    gap: 7px;
     align-items: flex-end;
     width: fit-content;
-    margin-top: 60px;
+    margin-top: 102px;
     margin-left: auto;
     margin-right: auto;
   }
