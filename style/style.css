@@ -573,16 +573,16 @@ img {
 }
 
 .productTabs {
-  margin-top: 60px;
+  margin-top: 0;
   display: flex;
   gap: 65px;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 .productTabs_count {
   display: flex;
   align-items: baseline;
   gap: 5px;
-  padding-top: 5px;
 }
 .productTabs_countValue {
   font-family: var(--second-family);
@@ -701,7 +701,7 @@ img {
   gap: 22px;
   list-style: none;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 22px;
   padding: 0;
 }
 .catalog_item {
