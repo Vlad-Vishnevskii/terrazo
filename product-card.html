@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+
+    <title>TERRAZZO</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container container--header">
+          <div class="header_top">
+            <a class="header_logo" href="">
+              <img src="./img/header/logo.svg" alt="ТЕРРАЦО.РФ" />
+            </a>
+            <div class="header_adress">
+              <div class="header_city">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.19029 9.30958L8.52363 7.97625M7.27167 9.97812L9.3351 13.6069C9.67731 14.2087 10.5705 14.1212 10.7895 13.4644L14.1605 3.35124C14.369 2.72583 13.774 2.13084 13.1486 2.33931L3.03542 5.71038C2.37863 5.92931 2.29114 6.82255 2.89296 7.16476L6.52169 9.22815C6.83462 9.40609 7.09373 9.66519 7.27167 9.97812Z"
+                    stroke="#1D1D1B"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="header_cityName"> Москва </span>
+              </div>
+              <p class="header_adressItem">
+                ARTPLAY, Нижняя Сыромятническая, д.10, стр. 2 этаж 2
+              </p>
+              <p class="header_adressItem">Будни с 10 до 19</p>
+            </div>
+            <div class="header_contacts">
+              <ul class="header_phoneList">
+                <li class="header_phoneItem">
+                  <a href="tel:88001016493">
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.708 13.9789C11.4052 15.2817 8.06855 14.0575 5.25551 11.2445C2.44248 8.43145 1.21826 5.09485 2.52114 3.79197L3.37898 2.93412C3.9712 2.3419 4.94703 2.35756 5.55856 2.96909L6.88728 4.29781C7.49881 4.90934 7.51447 5.88517 6.92225 6.47739L6.73799 6.66165C6.41825 6.98139 6.38696 7.49721 6.68407 7.85725C6.97064 8.20452 7.2796 8.55043 7.61458 8.88542C7.94957 9.2204 8.29548 9.52936 8.64275 9.81593C9.00279 10.113 9.51861 10.0818 9.83835 9.76201L10.0226 9.57775C10.6148 8.98553 11.5907 9.00119 12.2022 9.61272L13.5309 10.9414C14.1424 11.553 14.1581 12.5288 13.5659 13.121L12.708 13.9789Z"
+                        stroke="#1D1D1B"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                    8 800 101 64 93
+                  </a>
+                </li>
+                <li class="header_phoneItem">
+                  <a href="tel:+79117658760">+7 911 765 87 60</a>
+                </li>
+                <li class="header_phoneItem">
+                  <a href="tel:+79095890066">+7 909 589 00 66</a>
+                </li>
+              </ul>
+              <div class="header_otherContacts">
+                <a class="header_email" href="mailto:info@terrazzo.ru">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.00065 6.50008L7.20065 8.90008C7.67472 9.25564 8.32658 9.25564 8.80065 8.90008L12.0007 6.50008M4.66732 13.8334H11.334C13.1749 13.8334 14.6673 12.341 14.6673 10.5001V6.50008C14.6673 4.65913 13.1749 3.16675 11.334 3.16675H4.66732C2.82637 3.16675 1.33398 4.65913 1.33398 6.50008V10.5001C1.33398 12.341 2.82637 13.8334 4.66732 13.8334Z"
+                      stroke="#1D1D1B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  info@terrazzo.ru
+                </a>
+                <div class="header_socialsLinks">
+                  <a href="">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM10.3583 7.38245C9.38569 7.78701 7.44176 8.62434 4.52656 9.89445C4.05318 10.0827 3.8052 10.2669 3.78262 10.4469C3.74447 10.7513 4.12558 10.8711 4.64454 11.0343C4.71513 11.0565 4.78828 11.0795 4.86326 11.1039C5.37385 11.2698 6.06067 11.464 6.41772 11.4717C6.7416 11.4787 7.10309 11.3452 7.50218 11.0711C10.2259 9.23251 11.632 8.30319 11.7202 8.28315C11.7825 8.26902 11.8688 8.25125 11.9273 8.30322C11.9858 8.35519 11.98 8.45361 11.9738 8.48002C11.9361 8.64096 10.4401 10.0318 9.66592 10.7515C9.42457 10.9759 9.25338 11.135 9.21838 11.1714C9.13998 11.2528 9.06009 11.3298 8.9833 11.4039C8.50895 11.8611 8.15324 12.204 9.00299 12.764C9.41134 13.0331 9.7381 13.2556 10.0641 13.4776C10.4201 13.7201 10.7752 13.9619 11.2347 14.2631C11.3517 14.3398 11.4635 14.4195 11.5724 14.4971C11.9867 14.7925 12.3589 15.0579 12.8188 15.0155C13.086 14.991 13.362 14.7397 13.5022 13.9903C13.8335 12.2193 14.4847 8.38206 14.6352 6.80082C14.6483 6.66229 14.6318 6.48499 14.6184 6.40716C14.6051 6.32932 14.5773 6.21843 14.4761 6.13634C14.3563 6.03912 14.1713 6.01862 14.0886 6.02008C13.7125 6.0267 13.1354 6.22736 10.3583 7.38245Z"
+                        fill="#1D1D1B"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.0377 3.29028C7.09761 3.29028 3.07723 7.16261 3.07548 11.9216C3.07432 13.4434 3.48774 14.9287 4.27161 16.2369L3 20.7096L7.75142 19.5094C9.07309 20.2008 10.5427 20.5614 12.0343 20.5604H12.0377C16.9779 20.5604 20.9983 16.6875 21 11.9285C21.0012 9.62338 20.0698 7.45351 18.3772 5.82248C16.6852 4.19086 14.4352 3.29086 12.0377 3.29028ZM12.0377 19.1024H12.0348C10.6982 19.1024 9.3871 18.7563 8.24323 18.1025L7.97032 17.9469L5.15187 18.6588L5.90439 16.0111L5.72729 15.7399C4.98343 14.6054 4.58745 13.2782 4.58806 11.9216C4.58981 7.96564 7.932 4.74828 12.0406 4.74828C14.0299 4.74886 15.9002 5.49615 17.3071 6.85196C18.714 8.20777 19.488 10.0107 19.4868 11.928C19.4851 15.8839 16.1435 19.1024 12.0372 19.1024H12.0377ZM16.1237 13.7285C15.8996 13.6211 14.7987 13.0991 14.5932 13.0265C14.3882 12.9551 14.239 12.918 14.0897 13.134C13.9411 13.35 13.5114 13.836 13.3814 13.9794C13.2501 14.1234 13.1195 14.1408 12.8954 14.0334C12.6712 13.9254 11.9495 13.6978 11.0948 12.9627C10.4288 12.3913 9.97935 11.6853 9.84871 11.4687C9.71806 11.2533 9.83477 11.1365 9.94684 11.0291C10.0473 10.9333 10.171 10.7777 10.2825 10.6517C10.3939 10.5257 10.4311 10.4357 10.5066 10.2917C10.5809 10.1483 10.5437 10.0217 10.4874 9.91428C10.4311 9.8057 9.984 8.74428 9.79645 8.31286C9.61529 7.89248 9.43064 7.9488 9.29303 7.94183C9.16239 7.93603 9.01374 7.93428 8.86335 7.93428C8.71529 7.93428 8.472 7.98828 8.26645 8.20428C8.06148 8.42028 7.48258 8.9417 7.48258 10.0031C7.48258 11.0651 8.28503 12.0905 8.3971 12.2345C8.50916 12.378 9.97645 14.5571 12.223 15.492C12.7572 15.7132 13.1741 15.8462 13.4998 15.946C14.0363 16.1103 14.5246 16.0865 14.9102 16.0314C15.3399 15.9693 16.2352 15.51 16.421 15.0065C16.608 14.5031 16.608 14.0711 16.5523 13.9811C16.4977 13.8911 16.3479 13.8371 16.1237 13.7285Z"
+                        fill="#1D1D1B"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <button class="header_callBack" type="button">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.751 6.50065C11.5883 6.10386 11.3459 5.73211 11.0237 5.40993C10.7198 5.10594 10.3716 4.87296 10 4.71099M10 2.44238C10.8898 2.76472 11.7246 3.28255 12.4379 3.99587C13.1691 4.7271 13.6949 5.586 14.0153 6.50086M5.25551 11.2453C8.06855 14.0583 11.4052 15.2825 12.708 13.9796L13.5659 13.1218C14.1581 12.5296 14.1424 11.5537 13.5309 10.9422L12.2022 9.61349C11.5907 9.00196 10.6148 8.9863 10.0226 9.57852L9.83835 9.76278C9.51861 10.0825 9.00279 10.1138 8.64275 9.8167C8.29548 9.53013 7.94957 9.22117 7.61458 8.88619C7.2796 8.5512 6.97064 8.20529 6.68407 7.85802C6.38696 7.49798 6.41825 6.98216 6.73799 6.66242L6.92225 6.47816C7.51447 5.88594 7.49881 4.91011 6.88728 4.29858L5.55856 2.96986C4.94703 2.35833 3.9712 2.34267 3.37898 2.93489L2.52114 3.79274C1.21826 5.09562 2.44248 8.43222 5.25551 11.2453Z"
+                      stroke="#1D1D1B"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  Обратный звонок
+                </button>
+                <ul class="header_userIcons">
+                  <li>
+                    <a href="">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.0003 9V6C16.0003 3.79086 14.2094 2 12.0003 2C9.79115 2 8.00029 3.79086 8.00029 6V9M7.56902 22H16.4316C18.8507 22 20.7162 19.8693 20.3965 17.4713L19.4631 10.4713C19.1982 8.48412 17.503 7 15.4982 7H8.50236C6.49755 7 4.80241 8.48412 4.53744 10.4713L3.60411 17.4713C3.28439 19.8693 5.14987 22 7.56902 22Z"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 7C8 9.20914 9.79086 11 12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7Z"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M5 16.9347C5 16.0743 5.54085 15.3068 6.35109 15.0175C10.004 13.7128 13.996 13.7128 17.6489 15.0175C18.4591 15.3068 19 16.0743 19 16.9347V18.2502C19 19.4376 17.9483 20.3498 16.7728 20.1818L15.8184 20.0455C13.2856 19.6837 10.7144 19.6837 8.18162 20.0455L7.22721 20.1818C6.0517 20.3498 5 19.4376 5 18.2502V16.9347Z"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header_bottom">
+            <a class="header_productionBtn" href="">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.5 10C7.5 8.89543 8.39543 8 9.5 8H12.5C13.6046 8 14.5 8.89543 14.5 10C14.5 11.1046 13.6046 12 12.5 12H9.5C8.39543 12 7.5 11.1046 7.5 10Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M7.5 17.5C7.5 16.1193 8.61929 15 10 15H12C13.3807 15 14.5 16.1193 14.5 17.5V22.5C14.5 23.8807 13.3807 25 12 25H10C8.61929 25 7.5 23.8807 7.5 22.5V17.5Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M17.5 10.5C17.5 9.11929 18.6193 8 20 8H22C23.3807 8 24.5 9.11929 24.5 10.5V15.5C24.5 16.8807 23.3807 18 22 18H20C18.6193 18 17.5 16.8807 17.5 15.5V10.5Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M17.5 23C17.5 21.8954 18.3954 21 19.5 21H22.5C23.6046 21 24.5 21.8954 24.5 23C24.5 24.1046 23.6046 25 22.5 25H19.5C18.3954 25 17.5 24.1046 17.5 23Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                />
+              </svg>
+              продукция
+            </a>
+            <nav class="header_nav">
+              <ul class="header_navList">
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">
+                    услуги
+                    <svg
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.999999 15L6.33061 8.78095C6.7158 8.33156 6.7158 7.66844 6.33061 7.21905L0.999999 1"
+                        stroke="#1D1D1B"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">портфолио</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">сертификаты</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">оплата и доставка</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">контакты</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">сотрудничество</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">дизайнерам</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">скачать каталог</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">о компании</a>
+                </li>
+                <li class="header_navItem">
+                  <a class="header_navLink" href="#">Блог</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <h1 class="visually-hidden">
+          Изготавливаем плитку terrazzo собственного производства
+        </h1>
+
+        <div class="productCard">
+          <div class="container">
+            <div class="breadcrumbs">
+              <a class="breadcrumbs_link" href="">Главная</a>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 2.5L11.3306 8.71905C11.7158 9.16844 11.7158 9.83156 11.3306 10.2809L6 16.5"
+                  stroke="#DDDDDD"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <a class="breadcrumbs_link" href="">Каталог плитки</a>
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 2.5L11.3306 8.71905C11.7158 9.16844 11.7158 9.83156 11.3306 10.2809L6 16.5"
+                  stroke="#DDDDDD"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="breadcrumbs_currentPage">Название плитки</span>
+            </div>
+            <div class="productCard_favorite">
+              <button type="" class="productCard_favoriteBtn">
+                В Избранное
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                    stroke="#646360"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="productCard_container">
+              <div class="productCard_left">
+                <h3 class="productCard_subTitle">Характеристики</h3>
+                <ul class="productCard_specificationsList">
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">Длина</div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">Ширина</div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">Толщина</div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">Страна</div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">
+                      Поверхность
+                    </div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">Толщина</div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">Страна</div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                  <li class="productCard_specificationsItem">
+                    <div class="productCard_specificationsLabel">
+                      Поверхность
+                    </div>
+                    <div class="productCard_specificationsValue">1500</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="productCard_right">
+                <h2 class="productCard_name">Название плитки</h2>
+                <div class="productCard_article">
+                  <span class="productCard_articleText">Артикул:</span>
+                  <span class="productCard_articleValue">FLY-0038</span>
+                  <button class="productCard_copyBtn" type="button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5 7.40137C18.3967 7.92008 19 8.8896 19 10V18C19 19.6569 17.6569 21 16 21H12C10.8896 21 9.92007 20.3967 9.40135 19.5M8 17H12C13.6569 17 15 15.6569 15 14V6C15 4.34315 13.6569 3 12 3H8C6.34315 3 5 4.34315 5 6V14C5 15.6569 6.34315 17 8 17Z"
+                        stroke="#646360"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="productCard_price">2 390 руб/ шт</div>
+                <div class="productCard_countButtons">
+                  <button class="productCard_decrementBtn" type="button">
+                    <svg
+                      width="12"
+                      height="2"
+                      viewBox="0 0 12 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L11 1"
+                        stroke="#646360"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div class="productCard_countValue">1</div>
+                  <button class="productCard_incrementBtn" type="button">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 7V17M7 12H17"
+                        stroke="#646360"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <button class="productCard_orderBtn" type="button">
+                  заказать образцы
+                </button>
+                <p class="productCard_description">
+                  Керамическая плитка Spring Grass Luc 120x120 коллекции Seasons
+                  можно купить по розничной цене в нашем шоу-руме в Москве по
+                  адресу ARTPLAY, Нижняя Сыромятническая, д.10, стр. 2 этаж 2
+                  или через наш интернет-магазин Terrazzo Territory.
+                </p>
+                <h3 class="productCard_subTitle">Описание</h3>
+                <ul class="productCard_linksList">
+                  <li class="productCard_linksItem">
+                    <a class="productCard_link" href="#">
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.5 8.50002H7.5C5.29086 8.50002 3.5 10.2909 3.5 12.5L3.5 17.5C3.5 19.7092 5.29086 21.5 7.5 21.5H19.5C21.7091 21.5 23.5 19.7092 23.5 17.5V12.5C23.5 10.2909 21.7091 8.50002 19.5 8.50002H17.5M10.5005 13.4998L12.7934 15.7926C13.1839 16.1832 13.817 16.1832 14.2076 15.7926L16.5005 13.4998M13.5005 15.4998V3.49976"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <span>3D модель</span>
+                    </a>
+                  </li>
+                  <li class="productCard_linksItem">
+                    <a class="productCard_link" href="#">
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.5 8.50002H7.5C5.29086 8.50002 3.5 10.2909 3.5 12.5L3.5 17.5C3.5 19.7092 5.29086 21.5 7.5 21.5H19.5C21.7091 21.5 23.5 19.7092 23.5 17.5V12.5C23.5 10.2909 21.7091 8.50002 19.5 8.50002H17.5M10.5005 13.4998L12.7934 15.7926C13.1839 16.1832 13.817 16.1832 14.2076 15.7926L16.5005 13.4998M13.5005 15.4998V3.49976"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <span>Текстура</span>
+                    </a>
+                  </li>
+                  <li class="productCard_linksItem">
+                    <a class="productCard_link" href="#">
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.5 8.50002H7.5C5.29086 8.50002 3.5 10.2909 3.5 12.5L3.5 17.5C3.5 19.7092 5.29086 21.5 7.5 21.5H19.5C21.7091 21.5 23.5 19.7092 23.5 17.5V12.5C23.5 10.2909 21.7091 8.50002 19.5 8.50002H17.5M10.5005 13.4998L12.7934 15.7926C13.1839 16.1832 13.817 16.1832 14.2076 15.7926L16.5005 13.4998M13.5005 15.4998V3.49976"
+                          stroke="#1D1D1B"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <span>Документация</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_top">
+            <div class="footer_left">
+              <a href="">
+                <img src="./img/footer/logo-footer.svg" alt="" />
+              </a>
+              <div class="footer_socials">
+                <a href="">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24ZM24.7167 18.7649C22.7714 19.574 18.8835 21.2487 13.0531 23.7889C12.1064 24.1654 11.6104 24.5337 11.5652 24.8939C11.4889 25.5025 12.2512 25.7422 13.2891 26.0686C13.4303 26.113 13.5766 26.159 13.7265 26.2077C14.7477 26.5397 16.1213 26.928 16.8354 26.9434C17.4832 26.9574 18.2062 26.6904 19.0044 26.1423C24.4519 22.465 27.2639 20.6064 27.4405 20.5663C27.565 20.538 27.7376 20.5025 27.8546 20.6064C27.9715 20.7104 27.96 20.9072 27.9476 20.96C27.8721 21.2819 24.8802 24.0635 23.3318 25.503C22.8491 25.9517 22.5068 26.2701 22.4368 26.3428C22.28 26.5056 22.1202 26.6597 21.9666 26.8077C21.0179 27.7222 20.3065 28.4081 22.006 29.528C22.8227 30.0662 23.4762 30.5113 24.1282 30.9553C24.8402 31.4402 25.5504 31.9238 26.4693 32.5261C26.7034 32.6796 26.927 32.839 27.1448 32.9942C27.9734 33.585 28.7179 34.1157 29.6376 34.0311C30.172 33.9819 30.7241 33.4794 31.0044 31.9806C31.667 28.4386 32.9693 20.7641 33.2703 17.6016C33.2967 17.3246 33.2635 16.97 33.2369 16.8143C33.2102 16.6586 33.1546 16.4369 32.9522 16.2727C32.7126 16.0782 32.3427 16.0372 32.1772 16.0402C31.425 16.0534 30.2709 16.4547 24.7167 18.7649Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.0755 6.58057C14.1952 6.58057 6.15445 14.3252 6.15097 23.8431C6.14865 26.8869 6.97548 29.8575 8.54323 32.4739L6 41.4193L15.5028 39.0189C18.1462 40.4016 21.0854 41.1229 24.0685 41.1208H24.0755C33.9557 41.1208 41.9965 33.375 42 23.8571C42.0023 19.2468 40.1396 14.907 36.7544 11.645C33.3705 8.38173 28.8705 6.58173 24.0755 6.58057ZM24.0755 38.2048H24.0697C21.3964 38.2048 18.7742 37.5127 16.4865 36.2051L15.9406 35.8939L10.3037 37.3176L11.8088 32.0221L11.4546 31.4798C9.96686 29.2108 9.17489 26.5564 9.17613 23.8431C9.17961 15.9313 15.864 9.49657 24.0813 9.49657C28.0599 9.49773 31.8004 10.9923 34.6142 13.7039C37.428 16.4155 38.976 20.0213 38.9737 23.8559C38.9702 31.7678 32.287 38.2048 24.0743 38.2048H24.0755ZM32.2475 27.4571C31.7992 27.2422 29.5974 26.1982 29.1863 26.0531C28.7764 25.9102 28.4779 25.8359 28.1795 26.2679C27.8822 26.6999 27.0228 27.6719 26.7627 27.9588C26.5003 28.2468 26.239 28.2816 25.7907 28.0668C25.3425 27.8508 23.899 27.3955 22.1895 25.9253C20.8575 24.7826 19.9587 23.3705 19.6974 22.9373C19.4361 22.5065 19.6695 22.2731 19.8937 22.0582C20.0946 21.8666 20.3419 21.5554 20.5649 21.3034C20.7879 21.0514 20.8622 20.8714 21.0132 20.5834C21.1618 20.2966 21.0875 20.0434 20.9748 19.8286C20.8622 19.6114 19.968 17.4886 19.5929 16.6257C19.2306 15.785 18.8613 15.8976 18.5861 15.8837C18.3248 15.8721 18.0275 15.8686 17.7267 15.8686C17.4306 15.8686 16.944 15.9766 16.5329 16.4086C16.123 16.8406 14.9652 17.8834 14.9652 20.0062C14.9652 22.1302 16.5701 24.1811 16.7942 24.4691C17.0183 24.7559 19.9529 29.1142 24.4459 30.9839C25.5143 31.4264 26.3481 31.6923 26.9996 31.8921C28.0726 32.2207 29.0493 32.1731 29.8204 32.0628C30.6797 31.9385 32.4705 31.0199 32.8421 30.0131C33.216 29.0062 33.216 28.1422 33.1045 27.9622C32.9954 27.7822 32.6957 27.6742 32.2475 27.4571Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a class="footer_email" href="mailto:info@terrazzo.ru">
+                info@terrazzo.ru
+              </a>
+            </div>
+            <div class="footer_links footer_links--first">
+              <h3 class="footer_topTitle">Продукция</h3>
+              <div class="footer_linksList">
+                <a class="footer_linkItem" href="#">Плитка</a>
+                <a class="footer_linkItem" href="#">Полы</a>
+                <a class="footer_linkItem" href="#">Раковины</a>
+                <a class="footer_linkItem" href="#">Столешницы</a>
+                <a class="footer_linkItem" href="#">Подоконники</a>
+                <a class="footer_linkItem" href="#">Кухонные фартуки</a>
+                <a class="footer_linkItem" href="#">Архитектурные формы</a>
+              </div>
+            </div>
+            <div class="footer_links footer_links--second">
+              <h3 class="footer_topTitle">Услуги</h3>
+              <div class="footer_linksList">
+                <a class="footer_linkItem" href="#">Реставрация</a>
+                <a class="footer_linkItem" href="#">Проектирование</a>
+                <a class="footer_linkItem" href="#">Монтаж и обслуживание</a>
+              </div>
+            </div>
+            <div class="footer_links footer_links--third">
+              <h3 class="footer_topTitle">О Компании</h3>
+              <div class="footer_linksList">
+                <a class="footer_linkItem" href="#">Портфолио</a>
+                <a class="footer_linkItem" href="#">Сертификаты</a>
+                <a class="footer_linkItem" href="#">Дилерам</a>
+                <a class="footer_linkItem" href="#">Дизайнерам</a>
+                <a class="footer_linkItem" href="#">Доставка и оплата</a>
+                <a class="footer_linkItem" href="#">О компании</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom">
+            <div class="footer_adress">
+              <div class="footer_city">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.7854 13.2144L12.7854 11.2144M10.9075 14.2172L14.0026 19.6604C14.516 20.5631 15.8558 20.4319 16.1842 19.4467L21.2408 4.27686C21.5535 3.33875 20.661 2.44626 19.7229 2.75897L4.55312 7.81557C3.56794 8.14396 3.4367 9.48382 4.33944 9.99714L9.78254 13.0922C10.2519 13.3591 10.6406 13.7478 10.9075 14.2172Z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Москва
+              </div>
+              <div class="footer_adressItem">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.3327 6.94428C13.3327 10.5628 9.06602 14.3332 7.99935 14.3332C6.93268 14.3332 2.66602 10.5628 2.66602 6.94428C2.66602 4.02945 5.05383 1.6665 7.99935 1.6665C10.9449 1.6665 13.3327 4.02945 13.3327 6.94428Z"
+                    stroke="#646360"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M5.99935 6.6665C5.99935 7.77107 6.89478 8.6665 7.99935 8.6665C9.10392 8.6665 9.99935 7.77107 9.99935 6.6665C9.99935 5.56193 9.10392 4.6665 7.99935 4.6665C6.89478 4.6665 5.99935 5.56193 5.99935 6.6665Z"
+                    stroke="#646360"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                ARTPLAY, Нижняя Сыромятническая, д.10, стр. 2 этаж 2
+              </div>
+              <div class="footer_adressItem">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00065 5.3335V7.82177C8.00065 7.93322 8.05635 8.0373 8.14908 8.09912L10.0007 9.3335M14.6673 8.00016C14.6673 11.6821 11.6825 14.6668 8.00065 14.6668C4.31875 14.6668 1.33398 11.6821 1.33398 8.00016C1.33398 4.31826 4.31875 1.3335 8.00065 1.3335C11.6825 1.3335 14.6673 4.31826 14.6673 8.00016Z"
+                    stroke="#646360"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                Будни с 10 до 19
+              </div>
+            </div>
+            <ul class="footer_phoneList">
+              <li class="footer_phoneItem">
+                <a class="footer_phoneLink" href="tel:88001016493"
+                  >8 800 101 64 93</a
+                >
+              </li>
+              <li class="footer_phoneItem">
+                <a class="footer_phoneLink" href="tel:+79117658760"
+                  >+7 911 765 87 60</a
+                >
+              </li>
+              <li class="footer_phoneItem">
+                <a class="footer_phoneLink" href="tel:+79095890066"
+                  >+7 909 589 00 66</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
