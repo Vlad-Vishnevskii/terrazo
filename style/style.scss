@@ -1452,3 +1452,178 @@ img {
     color: #1d1d1b;
   }
 }
+
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 1230px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+
+  &_title {
+    margin-top: 80px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #cea56a;
+    margin-bottom: 30px;
+  }
+
+  &_row {
+    display: grid;
+    grid-template-columns: 483px 186px 268px 228px;
+    justify-content: start;
+    justify-items: start;
+    border-bottom: 1.5px solid #cea56a;
+    min-height: 95px;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  &_th {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #646360;
+  }
+
+  &_name {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 135%;
+    color: #1d1d1b;
+  }
+
+  &_amount {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #1d1d1b;
+  }
+
+  &_countBtns {
+    display: flex;
+    gap: 15px;
+  }
+
+  &_bottomBtn {
+    margin-top: 60px;
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  &_toPay {
+    box-shadow: 0 0 9px 0 rgba(158, 42, 42, 0.4), 0 2px 7px -19px #9e2a2a,
+      0 2px 4px -2px rgba(222, 182, 41, 0.59);
+    border: 1px solid #1d1d1b;
+    padding: 8px 18px;
+    width: 300px;
+    height: 56px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    background: none;
+    color: #646360;
+  }
+
+  &_toCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 0 9px 0 rgba(255, 255, 255, 0.32),
+      0 6px 19px -19px rgba(158, 42, 42, 0.53),
+      0 2px 2px -2px rgba(222, 182, 41, 0.6);
+    background-image: linear-gradient(90deg, #deb629, #9e2a2a);
+    transition: all $trans-default;
+    padding: 12px 32px;
+    width: 320px;
+    min-height: 56px;
+    border: 0;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  svg {
+    fill: #444;
+  }
+}
