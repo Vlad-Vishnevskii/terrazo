@@ -699,7 +699,11 @@ img {
     font-size: 16px;
     letter-spacing: 0.01em;
     color: #646360;
-    margin-right: 3px;
+    margin-right: 10px;
+
+    &:nth-of-type(2) {
+      margin-left: 5px;
+    }
   }
 
   &_currentPage {
@@ -1083,14 +1087,15 @@ img {
 // стили страницы с карточкой товара
 
 .productCard {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 80px;
+  // overflow: hidden;
 
   &_favorite {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-top: 60px;
+    margin-top: 25px;
   }
 
   &_favoriteBtn {
@@ -1116,13 +1121,18 @@ img {
     display: grid;
     grid-template-columns: 578px 1fr;
     column-gap: 20px;
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
   &_right,
   &_left {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+  }
+
+  &_right {
+    padding-left: 20px;
   }
 
   &_name {
@@ -1130,13 +1140,14 @@ img {
     font-weight: 500;
     font-size: 40px;
     letter-spacing: 0.03em;
+    line-height: normal;
     text-transform: uppercase;
     color: #1d1d1b;
   }
 
   &_article {
     display: flex;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 
   &_articleText,
@@ -1227,7 +1238,7 @@ img {
     min-height: 56px;
     border: 0;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 40px;
 
     &:hover,
     &:focus {
@@ -1295,19 +1306,23 @@ img {
     }
   }
 
+  &_gallery {
+    margin-top: -50px;
+  }
+
   &_specificationsList {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   &_specificationsItem {
     display: grid;
-    grid-template-columns: 210px 1fr;
+    grid-template-columns: 260px 1fr;
     column-gap: 10px;
-    padding: 15px 0;
+    padding: 17px 0;
     border-bottom: 1px solid #ddd;
   }
 
@@ -1326,5 +1341,114 @@ img {
     font-size: 18px;
     line-height: 135%;
     color: #646360;
+  }
+
+  .swiper-gallery {
+    position: relative;
+    padding-left: 55px;
+    padding-right: 20px;
+    width: 450px;
+    margin-bottom: 100px;
+
+    .swiper {
+      margin-top: 0px;
+      width: 360px;
+      height: 100px;
+      user-select: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .swiper-slide {
+      width: 105px;
+      height: 100px;
+
+      img {
+        max-width: initial;
+      }
+    }
+
+    .swiper-button-prev {
+      width: 48px;
+      height: 48px;
+      top: 50px;
+      left: -5px;
+    }
+
+    .swiper-button-next {
+      width: 48px;
+      height: 48px;
+      right: -10px;
+      top: 50px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      display: none;
+    }
+  }
+
+  &_line {
+    margin-top: 120px;
+    width: 100%;
+    height: 2px;
+    background-color: #cea56a;
+    box-shadow: 0 2px 6px 0 rgba(44, 41, 33, 0.1);
+  }
+
+  &_others {
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+
+    .swiper--others {
+      width: 100%;
+      height: auto;
+      user-select: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 60px;
+    }
+
+    .swiper-slide {
+      width: 320px;
+      height: 520px;
+
+      img {
+        max-width: initial;
+      }
+    }
+
+    .swiper-button-prev {
+      width: 48px;
+      height: 48px;
+      top: 70px;
+      left: 75%;
+      cursor: pointer;
+    }
+
+    .swiper-button-next {
+      width: 48px;
+      height: 48px;
+      left: 82%;
+      top: 70px;
+      cursor: pointer;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      display: none;
+    }
+  }
+
+  &_othersTitle {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #1d1d1b;
   }
 }

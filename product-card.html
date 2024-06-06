@@ -6,11 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="style/style.css" />
 
     <title>TERRAZZO</title>
   </head>
@@ -350,6 +350,86 @@
             </div>
             <div class="productCard_container">
               <div class="productCard_left">
+                <div class="productCard_gallery">
+                  <img
+                    class="productCard_mainImg"
+                    width="480"
+                    height="480"
+                    src="./img/product-card/gallery-image.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-gallery">
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img
+                          src="./img/product-card/slider-card.png"
+                          width="105"
+                          height="100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./img/product-card/slider-card.png"
+                          width="105"
+                          height="100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./img/product-card/slider-card.png"
+                          width="105"
+                          height="100"
+                          alt=""
+                        />
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          src="./img/product-card/slider-card.png"
+                          width="105"
+                          height="100"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33.5 42L15 23.5L33.5 5"
+                        stroke="#1D1D1B"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 5L33.5 23.5L15 42"
+                        stroke="#1D1D1B"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
                 <h3 class="productCard_subTitle">Характеристики</h3>
                 <ul class="productCard_specificationsList">
                   <li class="productCard_specificationsItem">
@@ -522,6 +602,418 @@
               </div>
             </div>
           </div>
+          <div class="productCard_line"></div>
+          <div class="productCard_others">
+            <div class="container">
+              <h2 class="productCard_othersTitle">Похожие товары</h2>
+            </div>
+            <div class="swiper--others">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="catalog_item">
+                    <a class="catalog_link" href="./product-card.html">
+                      <img src="./img/catalog/catalog-img.png" alt="" />
+
+                      <div class="catalog_textContent">
+                        <div class="catalog_priceRow">
+                          <div class="catalog_price">2 390 руб/ шт</div>
+                          <button class="catalog_favouritesBtn">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M3.66275 13.2135L9.82377 19.7065C11.0068 20.9532 12.9932 20.9532 14.1762 19.7065L20.3372 13.2135C22.5542 10.877 22.5543 7.08882 20.3373 4.75235C18.1203 2.41588 14.5258 2.41588 12.3088 4.75235V4.75235C12.1409 4.92925 11.8591 4.92925 11.6912 4.75235V4.75235C9.47421 2.41588 5.87975 2.41588 3.66275 4.75235C1.44575 7.08883 1.44575 10.877 3.66275 13.2135Z"
+                                stroke="#646360"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <h3 class="catalog_name">Название плитки</h3>
+                        <p class="catalog_article">
+                          <span>Артикул:</span>
+                          <span class="catalog_articleValue">FLY-0038</span>
+                        </p>
+                        <button class="catalog_orderBtn" type="button">
+                          Заказать образцы
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-button-prev-others">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M33.5 42L15 23.5L33.5 5"
+                    stroke="#1D1D1B"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-next swiper-button-next-others">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 5L33.5 23.5L15 42"
+                    stroke="#1D1D1B"
+                    stroke-width="4"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
@@ -681,7 +1173,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/product-card.js"></script>
   </body>
 </html>

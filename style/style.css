@@ -560,7 +560,10 @@ img {
   font-size: 16px;
   letter-spacing: 0.01em;
   color: #646360;
-  margin-right: 3px;
+  margin-right: 10px;
+}
+.breadcrumbs_link:nth-of-type(2) {
+  margin-left: 5px;
 }
 .breadcrumbs_currentPage {
   display: block;
@@ -898,14 +901,14 @@ img {
 }
 
 .productCard {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 80px;
 }
 .productCard_favorite {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 60px;
+  margin-top: 25px;
 }
 .productCard_favoriteBtn {
   display: flex;
@@ -929,23 +932,28 @@ img {
   grid-template-columns: 578px 1fr;
   -moz-column-gap: 20px;
        column-gap: 20px;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .productCard_right, .productCard_left {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+.productCard_right {
+  padding-left: 20px;
 }
 .productCard_name {
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.03em;
+  line-height: normal;
   text-transform: uppercase;
   color: #1d1d1b;
 }
 .productCard_article {
   display: flex;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .productCard_articleText, .productCard_articleValue {
   font-family: var(--font-family);
@@ -1023,7 +1031,7 @@ img {
   min-height: 56px;
   border: 0;
   cursor: pointer;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 .productCard_orderBtn:hover, .productCard_orderBtn:focus {
   opacity: 0.7;
@@ -1082,19 +1090,22 @@ img {
 .productCard_link:hover {
   opacity: 0.7;
 }
+.productCard_gallery {
+  margin-top: -50px;
+}
 .productCard_specificationsList {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .productCard_specificationsItem {
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: 260px 1fr;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  padding: 15px 0;
+  padding: 17px 0;
   border-bottom: 1px solid #ddd;
 }
 .productCard_specificationsLabel {
@@ -1111,4 +1122,101 @@ img {
   font-size: 18px;
   line-height: 135%;
   color: #646360;
+}
+.productCard .swiper-gallery {
+  position: relative;
+  padding-left: 55px;
+  padding-right: 20px;
+  width: 450px;
+  margin-bottom: 100px;
+}
+.productCard .swiper-gallery .swiper {
+  margin-top: 0px;
+  width: 360px;
+  height: 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+.productCard .swiper-gallery .swiper-slide {
+  width: 105px;
+  height: 100px;
+}
+.productCard .swiper-gallery .swiper-slide img {
+  max-width: initial;
+}
+.productCard .swiper-gallery .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  top: 50px;
+  left: -5px;
+}
+.productCard .swiper-gallery .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  right: -10px;
+  top: 50px;
+}
+.productCard .swiper-gallery .swiper-button-next:after,
+.productCard .swiper-gallery .swiper-button-prev:after {
+  display: none;
+}
+.productCard_line {
+  margin-top: 120px;
+  width: 100%;
+  height: 2px;
+  background-color: #cea56a;
+  box-shadow: 0 2px 6px 0 rgba(44, 41, 33, 0.1);
+}
+.productCard_others {
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.productCard_others .swiper--others {
+  width: 100%;
+  height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 60px;
+}
+.productCard_others .swiper-slide {
+  width: 320px;
+  height: 520px;
+}
+.productCard_others .swiper-slide img {
+  max-width: initial;
+}
+.productCard_others .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  top: 70px;
+  left: 75%;
+  cursor: pointer;
+}
+.productCard_others .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  left: 82%;
+  top: 70px;
+  cursor: pointer;
+}
+.productCard_others .swiper-button-next:after,
+.productCard_others .swiper-button-prev:after {
+  display: none;
+}
+.productCard_othersTitle {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1d1d1b;
 }/*# sourceMappingURL=style.css.map */
